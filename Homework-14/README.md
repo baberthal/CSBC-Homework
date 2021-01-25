@@ -117,3 +117,50 @@ INSERT INTO customers (firstname, lastname, email) VALUES ('John', 'Smith', 'jsm
 ---
 
 ### Bonus
+
+#### Step 3: Using Forms and a Cookie Jar
+
+1. Command to issue a request that enters the form values for Ryan's login:
+
+```bash
+curl --form "log=Ryan" --form "pwd=123456" http://localhost:8080/wp-admin/login.php
+```
+
+In the output, `curl` indicated that several cookies had been set, indicating
+the login was successful.
+
+2. Same `curl` request, but using a cookie jar at `./ryancookies.txt`:
+
+```bash
+curl --cookie-jar ./ryancookies.txt --form "log=Ryan" --form "pwd=123456" http://localhost:8080/wp-admin/login.php
+```
+
+3. It appears that 4 separate cookies were set and are now stored in the
+   `./ryancookies.txt` file.
+
+#### Step 4: Log in Using Cookies
+
+1. `curl` command that uses the `--cookie` option to log in:
+
+```bash
+curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php
+```
+
+The command returned the HTML and JavaScript that are used to display the
+dashboard, so it is obvious that we can access the dashboard.
+
+2. After piping the previous command through `grep Dashboard`, the wording on
+   the page seems familiar. We are successfully logged in to the Editor's
+   dashboard.
+
+#### Step 5: Test the Users.php Page
+
+1. `curl` command using the same cookies (i.e. Ryan's) to attempt to access the
+   `users.php` page:
+
+```bash
+curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/users.php
+```
+
+This time, the response was an error page indicating we do not have proper
+authorization to view the `users.php` page.

@@ -8,8 +8,9 @@
 > evening on Tuesday, and I completed the assignment as soon as possible. [Proof
 > if you need it](./Images/hours-proof.png).
 
-### Links to the files
+### Links to the report files
 
-* [Report (as a PDF)](./Report.pdf) (use this one)
-* [Report (as a Word doc)](./Report.docx)
-* [Report (download Word doc)](https://github.com/baberthal/CSBC-Homework/raw/prime/Homework-17/Report.docx)
+* [PDF Download](https://github.com/baberthal/CSBC-Homework/raw/prime/Homework-17/Report.pdf) (use this one)
+* [PDF](./Report.pdf)
+* [Word Doc](./Report.docx)
+* [Word Doc Download](https://github.com/baberthal/CSBC-Homework/raw/prime/Homework-17/Report.docx)

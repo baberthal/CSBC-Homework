@@ -12,4 +12,4 @@
 
 * [Report (as a PDF)](./Report.pdf) (use this one)
 * [Report (as a Word doc)](./Report.docx)
-* <a href="Report.docx" download="Report.docx">Report as a Word doc (download link)</a>
+* <a download="./Report.docx" href="./Report.docx">Report as a Word doc (download link)</a>

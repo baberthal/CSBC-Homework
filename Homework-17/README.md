@@ -12,4 +12,4 @@
 
 * [Report (as a PDF)](./Report.pdf) (use this one)
 * [Report (as a Word doc)](./Report.docx)
-* <a download="./Report.docx" href="./Report.docx">Report as a Word doc (download link)</a>
+* [Report (download Word doc)](https://github.com/baberthal/CSBC-Homework/raw/prime/Homework-17/Report.docx)

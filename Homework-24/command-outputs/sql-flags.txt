@@ -1,0 +1,11 @@
+mysql> SELECT post_title,post_content FROM wp_posts WHERE post_title LIKE "flag%";
++------------+-----------------------------------------+
+| post_title | post_content                            |
++------------+-----------------------------------------+
+| flag3      | flag3{afc01ab56b50591e7dccf93122770cd2} |
+| flag4      | flag4{715dea6c055b9fe3337544932f2941ce} |
+| flag3      | flag3{afc01ab56b50591e7dccf93122770cd2} |
++------------+-----------------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> quit;

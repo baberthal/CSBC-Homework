@@ -1,0 +1,46 @@
+mysql> show tables;
++-----------------------+
+| Tables_in_wordpress   |
++-----------------------+
+| wp_commentmeta        |
+| wp_comments           |
+| wp_links              |
+| wp_options            |
+| wp_postmeta           |
+| wp_posts              |
+| wp_term_relationships |
+| wp_term_taxonomy      |
+| wp_termmeta           |
+| wp_terms              |
+| wp_usermeta           |
+| wp_users              |
++-----------------------+
+12 rows in set (0.00 sec)
+
+mysql> describe wp_users;
++---------------------+---------------------+------+-----+---------------------+----------------+
+| Field               | Type                | Null | Key | Default             | Extra          |
++---------------------+---------------------+------+-----+---------------------+----------------+
+| ID                  | bigint(20) unsigned | NO   | PRI | NULL                | auto_increment |
+| user_login          | varchar(60)         | NO   | MUL |                     |                |
+| user_pass           | varchar(255)        | NO   |     |                     |                |
+| user_nicename       | varchar(50)         | NO   | MUL |                     |                |
+| user_email          | varchar(100)        | NO   | MUL |                     |                |
+| user_url            | varchar(100)        | NO   |     |                     |                |
+| user_registered     | datetime            | NO   |     | 0000-00-00 00:00:00 |                |
+| user_activation_key | varchar(255)        | NO   |     |                     |                |
+| user_status         | int(11)             | NO   |     | 0                   |                |
+| display_name        | varchar(250)        | NO   |     |                     |                |
++---------------------+---------------------+------+-----+---------------------+----------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT user_login,user_pass FROM wp_users;
++------------+------------------------------------+
+| user_login | user_pass                          |
++------------+------------------------------------+
+| michael    | $P$BjRvZQ.VQcGZlDeiKToCQd.cPw5XCe0 |
+| steven     | $P$Bk3VD9jsxx/loJoqNsURgHiaB23j7W/ |
++------------+------------------------------------+
+2 rows in set (0.00 sec)
+
+mysql> quit;

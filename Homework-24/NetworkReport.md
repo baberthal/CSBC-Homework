@@ -1,7 +1,5 @@
 # Network Forensic Analysis Report
 
-_TODO_ Complete this report as you complete the Network Activity on Day 3 of class.
-
 ## Time Thieves
 You must inspect your traffic capture to answer the following questions:
 

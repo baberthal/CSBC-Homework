@@ -113,6 +113,6 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - `flag4.txt` was found in the `/root` directory, the `root` account's
           home directory.
       - Commands run:
-        - `python -c 'import os; os.system("bin/sh")'`
+        - `python -c 'import os; os.system("/bin/sh")'`
         - `cat flag4.txt`
 
